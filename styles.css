@@ -1,0 +1,60 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: text-indent 0.5s ease-in-out;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #FBF0B2, #D8B4F8, #FFC7EA);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#closing-section {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.btn-primary {
+  --bs-btn-color: black;
+  --bs-btn-bg: #FFC7EA;
+  --bs-btn-border-color: #FFC7EA;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #FFC7EA;
+  --bs-btn-hover-border-color: #FFC7EA;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #FFC7EA;
+  --bs-btn-active-border-color: #FFC7EA;
+}
+
+.pb-2 {
+  font-weight: bolder;
+  font-style: italic;
+}
